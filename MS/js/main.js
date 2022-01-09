@@ -9,6 +9,9 @@ class Players {
 const playerOne = new Players("You", attack(), pv);
 const playerTwo = new Players("Monster", attackMonster(), pv);
 
+let btnStart = document.querySelector('.btn-start');
+btnStart.addEventListener('click', starting)
+
 function hideBtnAttacks () {
   btnStart.hidden = false;
   btnAttack.hidden = true;
