@@ -27,3 +27,11 @@ progress {
   grid-template-columns: repeat(2, 1fr);
   gap: 5%;
 }
+
+.startGame {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(220, 220, 220, 0.2);
+  box-shadow: 2px 3px 1px grey;
+  height: 100px;
+}
