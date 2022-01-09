@@ -13,3 +13,9 @@ input {
   text-transform: uppercase;
   color: grey;
 }
+
+progress {
+  width: 100%;
+  height: 2rem;
+  background-color: green;
+}
