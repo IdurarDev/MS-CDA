@@ -6,6 +6,6 @@ class Players {
   }
 }
 
-const playerOne = new Players("You", attack(), pv)
-const playerOne = new Players("Monster", attack(), pv)
+const playerOne = new Players("You", attack(), pv);
+const playerOne = new Players("Monster", attack(), pv);
 
