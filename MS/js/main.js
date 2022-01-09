@@ -111,7 +111,7 @@ function giveUp () {
   percentM.innerHTML = pvM;
 }
 
-
+stopping.addEventListener('click', giveUp);
 
 function checkingScore () {
   if (pvY <= 0) {
