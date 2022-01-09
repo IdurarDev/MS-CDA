@@ -44,3 +44,12 @@ input.starting {
   border: none;
   cursor: pointer;
 }
+
+input.attack-red {
+  margin: 3%;
+  padding: 0.5rem;
+  background: rgba(215, 51, 14, 0.8);
+  box-shadow: 2px 3px 1px rgb(65, 62, 62);
+  border: none;
+  cursor: pointer;
+}
