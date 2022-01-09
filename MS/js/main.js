@@ -103,16 +103,16 @@ function giveUp () {
   }
   my.value = 100;
   monster.value = 100;
-  pvY = 100;
-  pvM = 100;
-  percentY.innerHTML = pvY;
-  percentM.innerHTML = pvM;
+  playerOne.points = 100;
+  playerTwo.points = 100;
+  percentY.innerHTML = playerOne.points;
+  percentM.innerHTML = playerTwo.points;
 }
 
 stopping.addEventListener('click', giveUp);
 
 function checkingScore () {
-  if (pvY <= 0) {
+  if (playerOne.points <= 0) {
     if(confirm('Monster is winner, new game?')) {
       starting()
       hideBtnAttacks()
@@ -121,7 +121,7 @@ function checkingScore () {
 
       hideBtnAttacks()
     }
-  } else if (pvM <= 0) {
+  } else if (playerTwo.points <= 0) {
     if(confirm('You is winner, new game?')) {
       starting()
       hideBtnAttacks()
