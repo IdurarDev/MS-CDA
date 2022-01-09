@@ -27,8 +27,6 @@ function starting () {
   percentM.innerHTML = pvM;
 }
 
-btnStart.addEventListener('click', starting)
-
 function attackMonster () {
   return Math.floor(Math.random() * ((10 - 5) + 1) + 5);
 }
@@ -40,6 +38,22 @@ function attack () {
   let attackMy = Math.floor(Math.random() * ((10 - 3) + 1) + 3);
   monster.value -= attackMy;
   pvM -= attackMy;
+  percentM.innerHTML = pvM;
+  
+  checkingScore()
+  
+}
+
+
+
+function specialAttack () {
+
+  my.value -= attackMonster();
+  pvY -= attackMonster();
+  percentY.innerHTML = pvY;
+  let specialMy = Math.floor(Math.random() * ((20 - 10) + 1) + 10);
+  monster.value -= specialMy;
+  pvM -= specialMy;
   percentM.innerHTML = pvM;
 
   checkingScore()
