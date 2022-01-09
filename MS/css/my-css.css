@@ -53,3 +53,12 @@ input.attack-red {
   border: none;
   cursor: pointer;
 }
+
+input.attack-orange {
+  margin: 3%;
+  padding: 0.5rem;
+  background: rgba(216, 156, 44, 0.8);
+  box-shadow: 2px 3px 1px rgb(65, 62, 62);
+  border: none;
+  cursor: pointer;
+}
