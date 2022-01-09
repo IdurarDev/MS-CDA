@@ -61,7 +61,7 @@ function attack () {
   
 }
 
-punch.addEventListener('click', attack)
+punch.addEventListener('click', attack);
 
 function specialAttack () {
 
@@ -77,6 +77,7 @@ function specialAttack () {
 
 }
 
+specialPunch.addEventListener('click', specialAttack);
 
 function heal () {
   if ((pvY += 10) >= 100) {
