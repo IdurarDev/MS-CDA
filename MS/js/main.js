@@ -78,18 +78,18 @@ function specialAttack () {
 specialPunch.addEventListener('click', specialAttack);
 
 function heal () {
-  if ((pvY += 10) >= 100) {
-    pvY = 100;
+  if ((playerOne.points += 10) >= 100) {
+    playerOne.points = 100;
   } else {
-    pvY += 10;
+    playerOne.points += 10;
   }
-  pvY -= attackMonster();
-  pvM;
-  percentY.innerHTML = pvY;
-  my.value = pvY;
+  playerOne.points -= attackMonster();
+  playerTwo.points;
+  percentY.innerHTML = playerOne.points;
+  my.value = playerOne.points;
 
-  percentM.innerHTML = pvM;
-  monster.value = pvM
+  percentM.innerHTML = playerTwo.points;
+  monster.value = playerTwo.points;
   
   checkingScore()
 }
