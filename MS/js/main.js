@@ -61,7 +61,7 @@ function attack () {
   
 }
 
-
+punch.addEventListener('click', attack)
 
 function specialAttack () {
 
