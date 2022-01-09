@@ -96,6 +96,7 @@ function heal () {
   checkingScore()
 }
 
+health.addEventListener('click', heal);
 
 
 function giveUp () {
