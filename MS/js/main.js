@@ -16,6 +16,19 @@ function hideBtnAttacks () {
 
 hideBtnAttacks()
 
+function starting () {
+  btnStart.hidden = true;
+  btnAttack.hidden = false;
+  my.value = 100;
+  monster.value = 100;
+  pvY = 100;
+  pvM = 100;
+  percentY.innerHTML = pvY;
+  percentM.innerHTML = pvM;
+}
+
+btnStart.addEventListener('click', starting)
+
 function attackMonster () {
   return Math.floor(Math.random() * ((10 - 5) + 1) + 5);
 }
