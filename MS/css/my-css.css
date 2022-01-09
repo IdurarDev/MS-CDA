@@ -8,3 +8,8 @@ label {
   font-weight: bold;
   font-size: 1.2rem;
 }
+
+input {
+  text-transform: uppercase;
+  color: grey;
+}
