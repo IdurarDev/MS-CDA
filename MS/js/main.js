@@ -21,8 +21,6 @@ let stopping = document.querySelector('.stop');
 let percentY = document.querySelector('.percentYou');
 let percentM = document.querySelector('.percentMonster');
 
-
-
 percentY.innerHTML = playerOne.points;
 percentM.innerHTML = playerTwo.points;
 
@@ -50,12 +48,12 @@ function attackMonster () {
 
 function attack () {
   my.value -= attackMonster();
-  pvY -= attackMonster();
-  percentY.innerHTML = pvY;
+  playerOne.points -= attackMonster();
+  percentY.innerHTML = playerOne.points;
   let attackMy = Math.floor(Math.random() * ((10 - 3) + 1) + 3);
   monster.value -= attackMy;
-  pvM -= attackMy;
-  percentM.innerHTML = pvM;
+  playerTwo.points -= attackMy;
+  percentM.innerHTML = playerTwo.points;
   
   checkingScore()
   
@@ -66,12 +64,12 @@ punch.addEventListener('click', attack);
 function specialAttack () {
 
   my.value -= attackMonster();
-  pvY -= attackMonster();
-  percentY.innerHTML = pvY;
+  playerOne.points -= attackMonster();
+  percentY.innerHTML = playerOne.points;
   let specialMy = Math.floor(Math.random() * ((20 - 10) + 1) + 10);
   monster.value -= specialMy;
-  pvM -= specialMy;
-  percentM.innerHTML = pvM;
+  playerTwo.points -= specialMy;
+  percentM.innerHTML = playerTwo.points;
 
   checkingScore()
 
