@@ -59,3 +59,21 @@ function specialAttack () {
   checkingScore()
 
 }
+
+
+function heal () {
+  if ((pvY += 10) >= 100) {
+    pvY = 100;
+  } else {
+    pvY += 10;
+  }
+  pvY -= attackMonster();
+  pvM;
+  percentY.innerHTML = pvY;
+  my.value = pvY;
+
+  percentM.innerHTML = pvM;
+  monster.value = pvM
+  
+  checkingScore()
+}
