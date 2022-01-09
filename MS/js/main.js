@@ -7,7 +7,12 @@ class Players {
 }
 
 const playerOne = new Players("You", attack(), pv);
-const playerOne = new Players("Monster", attackMonster(), pv);
+const playerTwo = new Players("Monster", attackMonster(), pv);
+
+function hideBtnAttacks () {
+  btnStart.hidden = false;
+  btnAttack.hidden = true;
+}
 
 function attackMonster () {
   return Math.floor(Math.random() * ((10 - 5) + 1) + 5);
