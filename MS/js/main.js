@@ -77,3 +77,19 @@ function heal () {
   
   checkingScore()
 }
+
+
+
+function giveUp () {
+  if(confirm('You are give up, new game ?')) {
+    hideBtnAttacks()
+  }
+  my.value = 100;
+  monster.value = 100;
+  pvY = 100;
+  pvM = 100;
+  percentY.innerHTML = pvY;
+  percentM.innerHTML = pvM;
+}
+
+
