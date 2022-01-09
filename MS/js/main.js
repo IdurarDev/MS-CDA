@@ -118,7 +118,6 @@ function checkingScore () {
       hideBtnAttacks()
     } else {
       starting()
-
       hideBtnAttacks()
     }
   } else if (playerTwo.points <= 0) {
