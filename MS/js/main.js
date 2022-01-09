@@ -93,3 +93,24 @@ function giveUp () {
 }
 
 
+
+function checkingScore () {
+  if (pvY <= 0) {
+    if(confirm('Monster is winner, new game?')) {
+      starting()
+      hideBtnAttacks()
+    } else {
+      starting()
+
+      hideBtnAttacks()
+    }
+  } else if (pvM <= 0) {
+    if(confirm('You is winner, new game?')) {
+      starting()
+      hideBtnAttacks()
+    } else {
+      starting()
+      hideBtnAttacks()
+    }
+  }
+}
