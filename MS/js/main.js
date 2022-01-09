@@ -6,11 +6,9 @@ class Players {
   }
 }
 
-let pvY = 100;
-let pvM = 100;
 
-const playerOne = new Players("You", attack, pvY);
-const playerTwo = new Players("Monster", attackMonster, pvM);
+const playerOne = new Players("You", attack, 100);
+const playerTwo = new Players("Monster", attackMonster, 100);
 
 let btnStart = document.querySelector('.btn-start');
 let btnAttack = document.querySelector('.btn-attack');
@@ -25,8 +23,8 @@ let percentM = document.querySelector('.percentMonster');
 
 
 
-percentY.innerHTML = pvY;
-percentM.innerHTML = pvM;
+percentY.innerHTML = playerOne.points;
+percentM.innerHTML = playerTwo.points;
 
 function hideBtnAttacks () {
   btnStart.hidden = false;
@@ -38,12 +36,10 @@ hideBtnAttacks()
 function starting () {
   btnStart.hidden = true;
   btnAttack.hidden = false;
-  my.value = 100;
-  monster.value = 100;
-  pvY = 100;
-  pvM = 100;
-  percentY.innerHTML = pvY;
-  percentM.innerHTML = pvM;
+  my.value = playerOne.points;
+  monster.value = playerTwo.points;
+  percentY.innerHTML = playerOne.points;
+  percentM.innerHTML = playerTwo.points;
 }
 
 btnStart.addEventListener('click', starting);
