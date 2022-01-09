@@ -6,11 +6,27 @@ class Players {
   }
 }
 
-const playerOne = new Players("You", attack(), pv);
-const playerTwo = new Players("Monster", attackMonster(), pv);
+let pvY = 100;
+let pvM = 100;
+
+const playerOne = new Players("You", attack, pvY);
+const playerTwo = new Players("Monster", attackMonster, pvM);
 
 let btnStart = document.querySelector('.btn-start');
-btnStart.addEventListener('click', starting)
+let btnAttack = document.querySelector('.btn-attack');
+let my = document.getElementById('you');
+let monster = document.getElementById('monster');
+let punch = document.querySelector('.punch');
+let specialPunch = document.querySelector('.specialPunch');
+let health = document.querySelector('.health');
+let stopping = document.querySelector('.stop');
+let percentY = document.querySelector('.percentYou');
+let percentM = document.querySelector('.percentMonster');
+
+
+
+percentY.innerHTML = pvY;
+percentM.innerHTML = pvM;
 
 function hideBtnAttacks () {
   btnStart.hidden = false;
@@ -29,6 +45,8 @@ function starting () {
   percentY.innerHTML = pvY;
   percentM.innerHTML = pvM;
 }
+
+btnStart.addEventListener('click', starting);
 
 function attackMonster () {
   return Math.floor(Math.random() * ((10 - 5) + 1) + 5);
