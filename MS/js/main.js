@@ -107,6 +107,7 @@ function giveUp () {
   playerTwo.points = 100;
   percentY.innerHTML = playerOne.points;
   percentM.innerHTML = playerTwo.points;
+  hideBtnAttacks()
 }
 
 stopping.addEventListener('click', giveUp);
@@ -118,6 +119,7 @@ function checkingScore () {
       hideBtnAttacks()
     } else {
       starting()
+
       hideBtnAttacks()
     }
   } else if (playerTwo.points <= 0) {
