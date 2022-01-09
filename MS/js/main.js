@@ -14,6 +14,8 @@ function hideBtnAttacks () {
   btnAttack.hidden = true;
 }
 
+hideBtnAttacks()
+
 function attackMonster () {
   return Math.floor(Math.random() * ((10 - 5) + 1) + 5);
 }
