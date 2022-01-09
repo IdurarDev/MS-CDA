@@ -115,18 +115,26 @@ stopping.addEventListener('click', giveUp);
 function checkingScore () {
   if (playerOne.points <= 0) {
     if(confirm('Monster is winner, new game?')) {
+      playerOne.points = 100;
+      playerTwo.points = 100;
       starting()
       hideBtnAttacks()
     } else {
+      playerOne.points = 100;
+      playerTwo.points = 100;
       starting()
 
       hideBtnAttacks()
     }
   } else if (playerTwo.points <= 0) {
     if(confirm('You is winner, new game?')) {
+      playerOne.points = 100;
+      playerTwo.points = 100;
       starting()
       hideBtnAttacks()
     } else {
+      playerOne.points = 100;
+      playerTwo.points = 100;
       starting()
       hideBtnAttacks()
     }
